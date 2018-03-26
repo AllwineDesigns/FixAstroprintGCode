@@ -1,0 +1,11 @@
+[Unit]
+Description=Fix GCode from Astroprint's old Cura slicer
+After=network.target
+
+[Service]
+ExecStart=/home/pi/FixAstroprintGCode/fix_gcode.py
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
