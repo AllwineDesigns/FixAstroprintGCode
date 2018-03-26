@@ -6,12 +6,12 @@ Info about the problem:
 https://forum.astroprint.com/t/solved-having-trouble-with-a-printrbot-simple-pro/3168/3
 
 To get the Printrbot Simple Pro to work with Astroprint, you need to follow
-the instructions for updating the firmware so you can print over USB [here](https://printrbot.zendesk.com/hc/en-us/articles/115000151583-Printing-via-USB-on-Cura-2-with-Your-Printrbot-Simple-Pro?mobile_site=true).
+these [instructions](https://printrbot.zendesk.com/hc/en-us/articles/115000151583-Printing-via-USB-on-Cura-2-with-Your-Printrbot-Simple-Pro?mobile_site=true) for updating your Printrbot Simple Pro firmware so you can print over USB.
 
-Rather than setting up Cura 2, you'll set up an Astroprint printer with the
-same almost all the same settings. You need to make a couple changes to the Start Commands. 
-Change the 0.0 to the calibration setting on your Printrbot Simple Pro and
-change material_print_temperature to print_temperature.
+Rather than setting up Cura 2, you'll set up an Astroprint printer profile with 
+almost all the same settings. You need to make a couple changes to the Start Commands. 
+Change the 0.0 on the first line to the calibration setting on your Printrbot Simple Pro and
+change material_print_temperature to print_temperature (this change was done for you below, but you'll need to set your calibration setting).
 
 ```
 M100.1 ({{g55z: 0.0}}) ;Z-probe offset
